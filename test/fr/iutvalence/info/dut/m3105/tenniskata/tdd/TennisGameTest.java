@@ -14,5 +14,12 @@ public class TennisGameTest
 		TennisGame tennis = new TennisGame();
 		assertEquals(tennis.getScores(), "Love-all");
 	}
+	
+	@Test
+	public void theTeam1ScoredPoints()
+	{
+		TennisGame tennis = new TennisGame();
+		assertEquals(tennis.getScores(), "Fifteen-love");
+	}
 
 }
