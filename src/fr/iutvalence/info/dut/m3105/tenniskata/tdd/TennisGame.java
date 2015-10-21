@@ -2,8 +2,8 @@ package fr.iutvalence.info.dut.m3105.tenniskata.tdd;
 public class TennisGame
 {
 	
-	private static final String LOVE_ALL = "Love-all";
-	private static final String FIFTEEN_LOVE = "Fifteen-love";
+	public static final String LOVE_ALL = "Love-all";
+	public static final String FIFTEEN_LOVE = "Fifteen-love";
 	
 	private int scoreOfTeam1;
 	private int scoreOfTeam2;
