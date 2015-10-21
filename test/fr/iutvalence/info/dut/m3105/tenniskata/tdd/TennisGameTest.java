@@ -8,18 +8,24 @@ import org.junit.Test;
 
 public class TennisGameTest
 {
+	private static final String FIFTEEN_LOVE = "Fifteen-love";
+	public final static String LOVE_ALL = "Love-all";
+	
+	
 	@Test
 	public void scoresOfGamesIsNull()
 	{
 		TennisGame tennis = new TennisGame();
-		assertEquals(tennis.getScores(), "Love-all");
+		tennis.startOfGame();
+		assertEquals(tennis.getScores(), LOVE_ALL);
 	}
 	
 	@Test
 	public void theTeam1ScoredPoints()
 	{
 		TennisGame tennis = new TennisGame();
-		assertEquals(tennis.getScores(), "Fifteen-love");
+		tennis.scoreOfTeam1();
+		assertEquals(tennis.getScores(), FIFTEEN_LOVE);
 	}
 
 }
