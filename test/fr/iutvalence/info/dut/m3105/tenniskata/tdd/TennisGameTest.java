@@ -32,6 +32,7 @@ public class TennisGameTest
 	public void theTeam2ScoredPoints()
 	{
 		TennisGame tennis = new TennisGame();
+		tennis.scoreOfTeam2();
 		assertEquals(tennis.getScores(), "Love-fifteen");
 	}
 

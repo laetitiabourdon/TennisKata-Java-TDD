@@ -25,6 +25,12 @@ public class TennisGame
 	{
 		return this.score;
 	}
+
+	public void scoreOfTeam2()
+	{
+		this.score = "Love-fifteen";
+		
+	}
 	
 	
 }
