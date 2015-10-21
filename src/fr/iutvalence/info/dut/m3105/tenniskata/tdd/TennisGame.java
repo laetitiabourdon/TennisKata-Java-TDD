@@ -16,7 +16,7 @@ public class TennisGame
 		this.score = LOVE_ALL;
 	}
 	
-	public void scoreOfTeam1()
+	public void scoreOfPlayer1()
 	{
 		this.score = FIFTEEN_LOVE;
 		
@@ -27,7 +27,7 @@ public class TennisGame
 		return this.score;
 	}
 
-	public void scoreOfTeam2()
+	public void scoreOfPlayer2()
 	{
 		this.score = LOVE_FIFTEEN;
 		

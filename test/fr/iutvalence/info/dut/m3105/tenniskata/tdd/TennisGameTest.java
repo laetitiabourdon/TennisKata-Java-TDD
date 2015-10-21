@@ -22,19 +22,26 @@ public class TennisGameTest
 	}
 	
 	@Test
-	public void theTeam1ScoredPoints()
+	public void thePlayer1ScoredPoints()
 	{
 		TennisGame tennis = new TennisGame();
-		tennis.scoreOfTeam1();
+		tennis.scoreOfPlayer1();
 		assertEquals(tennis.getScores(), FIFTEEN_LOVE);
 	}
 	
 	@Test
-	public void theTeam2ScoredPoints()
+	public void thePlayer2ScoredPoints()
 	{
 		TennisGame tennis = new TennisGame();
-		tennis.scoreOfTeam2();
+		tennis.scoreOfPlayer2();
 		assertEquals(tennis.getScores(), LOVE_FIFTEEN);
+	}
+	
+	@Test 
+	public void eachPlayerScoredPoint()
+	{
+		TennisGame tennis = new TennisGame();
+		assertEquals(tennis.getScores(), "Fifteen-all");
 	}
 
 }
